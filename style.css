@@ -1,0 +1,23 @@
+
+body
+{
+    background-color: black;
+}
+
+h1
+{
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    margin : 0;
+}
+
+h2
+{
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
