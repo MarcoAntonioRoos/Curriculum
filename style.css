@@ -1,23 +1,172 @@
-
-body
+@media ( min-width:600px)
 {
-    background-color: black;
+    body
+    {
+        background-color: black;
+    }
+
+    h1
+    {
+        position:relative;
+        font-size: 3vw;
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        margin: 0;
+        margin-top: -10%;
+        text-align: center;
+    }
+
+    h2
+    {
+        position: relative;
+        margin-top: 10px;
+        font-size: 1.5vw;
+        color: yellow;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+    }
+
+    .perfil
+    {
+        image-rendering: pixelated;
+        height: 800px;
+        object-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div
+    {
+        background-color: rgba(255, 255, 255, 0.479);
+        height: 100px;
+        width: 100%;
+        display: block;
+        left: 0;
+        bottom: 0%;
+        position: absolute;
+        
+    }
+
+    p
+    {
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    @keyframes downArrowAnim 
+    {
+        0%
+        {
+            bottom: 1%;
+        }
+        50%
+        {
+            bottom: 2%;
+        }
+        100%
+        {
+            bottom: 1%;
+        }
+    }
+
+    .downArrow
+    {
+        height: 32px;
+        right: 5%;
+        position: fixed;
+        animation-name: downArrowAnim;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+    }
+
 }
 
-h1
+@media ( max-width:600px )
 {
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 5vw;
-    color: white;
-    text-align: center;
-    margin : 0;
-}
+    body
+    {
+        background-color: black;
+    }
 
-h2
-{
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    margin: 0;
+    h1
+    {
+        font-size: 15px;
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        margin: 0;
+        text-align: center;
+        position: relative;
+    }
+
+    h2
+    {
+        font-size: 8px;
+        color: yellow;
+        font-family: 'Press Start 2P', cursive;
+        margin: 0;
+        text-align: center;
+        position: relative;
+    }
+
+    .perfil
+    {
+        image-rendering: pixelated;
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40vw;
+        margin-bottom: auto;
+    }
+
+    div
+    {
+        background-color: rgba(255, 255, 255, 0.479);
+        height: 10%;
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+
+    p
+    {
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    @keyframes downArrowAnim 
+    {
+        0%
+        {
+            bottom: 1%;
+        }
+        50%
+        {
+            bottom: 2%;
+        }
+        100%
+        {
+            bottom: 1%;
+        }
+    }
+
+    .downArrow
+    {
+        size: 3vw;
+        right: 5%;
+        position: fixed;
+        animation-name: downArrowAnim;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+    }
 }
