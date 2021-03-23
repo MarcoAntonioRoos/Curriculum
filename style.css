@@ -45,7 +45,7 @@ div.menuBar
     float: left;
     position: fixed;
     border-right: 10px;
-    border-color: grey;
+    border-color: rgb(87, 0, 87);
     border-style:double;
     transition: left 1s;
     z-index: 99999;
@@ -56,9 +56,14 @@ div.menuBar:hover
     left: 0px;
 }
 
+
+ul.menu
+{
+    position: relative;
+}
+
 ul
 {
-    position: fixed;
     text-align: center;
     font-variant: small-caps;
     color: white;
@@ -170,10 +175,10 @@ div.skill
     position: relative;
     float: left;
     background-color: rgba(255, 255, 255, 0.096);
-    height: 300px;
-    width: 23%;
-    margin: 1%;
-    margin-top: 300px;
+    height: 30vh;
+    width: 22vw;
+    margin: 1vw;
+    margin-top: 30vh;
     box-sizing: content-box;
     overflow: hidden;
     transition: transform 1s;
@@ -205,7 +210,7 @@ div.skill:hover > pre
 {
     transform: scaleY(0.5);
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 12vh;
     display: block;
     color:  white;
     margin-left: 1.5vw;
