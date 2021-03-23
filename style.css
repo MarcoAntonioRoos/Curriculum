@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 html
 {
     scroll-behavior: smooth;
@@ -9,7 +10,6 @@ html
 
 body
 {
-    position: relative;
     background-color: black;
     cursor: grab;
 }
@@ -67,6 +67,8 @@ ul.menu
 
 ul
 {
+    position: fixed;
+    display:contents;
     text-align: center;
     font-variant: small-caps;
     color: white;
@@ -78,6 +80,7 @@ li
 {
     font-size: 32px;
     background-color: black;
+    margin-top: 1vh;
     transition: font-size 0.4s, background-color 0.4s;
 }
 
