@@ -58,6 +58,7 @@ div.menuBar:hover
 
 ul
 {
+    position: fixed;
     text-align: center;
     font-variant: small-caps;
     color: white;
