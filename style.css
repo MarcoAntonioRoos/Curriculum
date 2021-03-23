@@ -1,171 +1,358 @@
-@media ( min-width:600px)
+@charset "UTF-8";
+
+
+html
 {
-    body
-    {
-        background-color: black;
-    }
+    scroll-behavior: smooth;
+}
 
-    h1
-    {
-        position:relative;
-        font-size: 3vw;
-        color: white;
-        font-family: 'Press Start 2P', cursive;
-        margin: 0;
-        margin-top: -10%;
-        text-align: center;
-    }
+body
+{
+    background-color: black;
+    cursor: grab;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
-    h2
-    {
-        position: relative;
-        margin-top: 10px;
-        font-size: 1.5vw;
-        color: yellow;
-        font-family: 'Press Start 2P', cursive;
-        text-align: center;
-    }
+.page
+{
+    width: 100%;
+    height: 100vh;
+    border: 0;
+    padding: 0;
+}
 
-    .perfil
-    {
-        image-rendering: pixelated;
-        height: 800px;
-        object-position: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    div
-    {
-        background-color: rgba(255, 255, 255, 0.479);
-        height: 100px;
-        width: 100%;
-        display: block;
-        left: 0;
-        bottom: 0%;
-        position: absolute;
-        
-    }
+.pageFinal
+{
+    width: 100%;
+    height: 100vh;
+    border: 0;
+    padding: 0;
+    background-color: rgb(77, 1, 77);
+}
 
-    p
-    {
-        color: white;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 20px;
-        text-align: center;
-        margin: 0;
-        margin-top: 20px;
-    }
 
-    @keyframes downArrowAnim 
-    {
-        0%
-        {
-            bottom: 1%;
-        }
-        50%
-        {
-            bottom: 2%;
-        }
-        100%
-        {
-            bottom: 1%;
-        }
-    }
+div.menuBar
+{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.788);
+    margin: 0;
+    left: -200px;
+    top: -20px;
+    height: 120%;
+    width: 200px;
+    float: left;
+    position: fixed;
+    border-right: 10px;
+    border-color: grey;
+    border-style:double;
+    transition: left 1s;
+    z-index: 99999;
+}
 
-    .downArrow
-    {
-        height: 32px;
-        right: 5%;
-        position: fixed;
-        animation-name: downArrowAnim;
-        animation-duration: 0.9s;
-        animation-iteration-count: infinite;
-    }
+div.menuBar:hover
+{
+    left: 0px;
+}
+
+ul
+{
+    text-align: center;
+    font-variant: small-caps;
+    color: white;
+    list-style: none;
+    padding: 0px;
+}
+
+li
+{
+    font-size: 32px;
+    background-color: black;
+    transition: font-size 0.4s, background-color 0.4s;
+}
+
+li:hover
+{
+    background-color: purple;
+    font-size: 36px;
+}
+
+img.perfil
+{
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    left: 30px; right: -30px;
+    top: 0; bottom: 0;
+    object-fit: scale-down;
+    z-index: -10;
+}
+
+
+h1
+{
+    position: relative;
+    text-align: center;
+    color: purple;
+    margin: 0;
+    left: 5px;
+    font-size: 65px;
+    z-index: -9;
+}
+
+h2
+{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0;
+    left: 5px;
+    font-size: 25px;
+    z-index: -9;
+}
+
+h3
+{
+    color: purple;
+    font-size: 200px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 50%;
+    transition: transform 3s;
+}
+
+
+h3:hover
+{
+    transform: scale(1.2);
+    transform: rotate(360deg);
+}
+
+
+div.hello
+{
+    position: absolute;
+    margin: auto; 
+    bottom: 10%;
+    left: 0; right: 0;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+p.experience
+{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+
+@media ( min-width:800px )
+{
+
+#Skills
+{
+    height: 100vh;
+}
+
+div.skill
+{
+    position: relative;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.096);
+    height: 300px;
+    width: 23%;
+    margin: 1%;
+    margin-top: 300px;
+    box-sizing: content-box;
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+
+div.skill:hover
+{
+    transform: scaleY(2);
+}
+
+img.iconsBig
+{
+    position: absolute;
+    height: 75%;
+    max-width: 100%;
+    margin: auto;
+    top: 0; bottom: 0; right: 0; left: 0;
+    transition: transform 1s, top 1s, bottom 1s;
+}
+
+div.skill:hover > img.iconsBig
+{
+    transform: scaleY(0.5);
+    top: -80px; bottom: 80px;
+}
+
+div.skill:hover > pre
+{
+    transform: scaleY(0.5);
+    margin: auto;
+    margin-top: 15vh;
+    display: block;
+    color:  white;
+    margin-left: 1.5vw;
+}
+
+pre
+{
+    display: none;
+    color: rgba(255, 255, 255, 0);
+    font-size: 1.5vw;
+}
+
 
 }
 
-@media ( max-width:600px )
+@media ( max-width:800px )
 {
-    body
-    {
-        background-color: black;
-    }
 
-    h1
-    {
-        font-size: 20px;
-        color: white;
-        font-family: 'Press Start 2P', cursive;
-        margin: 0;
-        text-align: center;
-        position: relative;
-    }
+div.skill
+{
+    padding: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.096);
+    height: 20vh;
+    width: 95%;
+    margin: 2.5%;
+    margin-top: 4vh;
+    box-sizing: content-box;
+}
 
-    h2
-    {
-        font-size: 15px;
-        color: yellow;
-        font-family: 'Press Start 2P', cursive;
-        margin: 0;
-        text-align: center;
-        position: relative;
-    }
+img.iconsBig
+{
+    position: absolute;
+    height: 50%;
+    max-width: 100%;
+    margin: auto;
+    top: 0; bottom: 0;
+    margin-left: 5vw;
+}
 
-    .perfil
-    {
-        image-rendering: pixelated;
-        height: 500px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20vw;
-        margin-bottom: auto;
-    }
+pre
+{
+    color: white;
+    font-size: 1.8vh;
+    margin-top: 3vh;
+    margin-left: 40vw;
+}
+}
 
-    div
-    {
-        background-color: rgba(255, 255, 255, 0.479);
-        height: 10%;
-        width: 100%;
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 0;
-    }
+@media( min-width:1300px )
+{
+    img.certificate1
+{
+    width: 40vw;
+    float: left;
+    margin: 4vw;
+    overflow: hidden;
+}
 
-    p
-    {
-        color: white;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 2.5vw;
-        text-align: center;
-    }
+img.certificate2
+{
+    width: 40vw;
+    float: right;
+    margin: 4vw;
+    overflow: hidden;
+}
 
-    @keyframes downArrowAnim 
-    {
-        0%
-        {
-            bottom: 1%;
-        }
-        50%
-        {
-            bottom: 2%;
-        }
-        100%
-        {
-            bottom: 1%;
-        }
-    }
+}
 
-    .downArrow
-    {
-        size: 3vw;
-        right: 5%;
-        position: fixed;
-        animation-name: downArrowAnim;
-        animation-duration: 0.9s;
-        animation-iteration-count: infinite;
-    }
+
+@media( min-width:600px ) and ( max-width:1300px )
+{
+
+img.certificate1
+{
+    height: 40vh;
+    display:block;
+    margin: 5vh;
+    margin-left: auto; margin-right: auto;
+}
+
+img.certificate2
+{
+    height: 40vh;
+    display:block;
+    margin-left: auto; margin-right: auto;
+}
+
+}
+
+
+@media( max-width:600px )
+{
+
+img.certificate1
+{
+    width: 80vw;
+    display:block;
+    margin: 5vh;
+    margin-left: auto; margin-right: auto;
+}
+
+img.certificate2
+{
+    width: 80vw;
+    display:block;
+    margin-left: auto; margin-right: auto;
+}
+
+}
+
+img.contact
+{
+    height: 20vh;
+   position: relative;
+}
+
+li.contact
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1vw;
+    box-sizing: content-box;
+}
+
+li.contact:hover
+{
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+li.contact:hover > a.contact
+{
+    color: black;
+}
+
+a.contact
+{
+    font-size: 2.75vw;
+    color: purple;
+    margin: auto;
+    margin-left: 5vw;
+    margin-bottom:  50%;
+}
+
+p.contact
+{
+    font-size: 3.5vh;
+    color: purple;
+    margin: auto;
+    margin-left: 5vw;
+    margin-bottom:  50%;
 }
