@@ -59,7 +59,10 @@ div.menuBar:hover
 
 ul.menu
 {
-    position: relative;
+    position: fixed;
+    display:contents;
+    margin: auto;
+    left: 0; right: 0;
 }
 
 ul
