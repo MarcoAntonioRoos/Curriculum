@@ -18,6 +18,12 @@ body
     min-height: -webkit-fill-available;
 }
 
+#screenheight
+{
+    height: 100%;
+    max-height: 100vh;
+}
+
 .page
 {
     width: 100vw;
