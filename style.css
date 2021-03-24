@@ -110,7 +110,7 @@ h1
     color: purple;
     margin: 0;
     left: 5px;
-    font-size: 65px;
+    font-size: 4vw;
     z-index: -9;
 }
 
@@ -121,7 +121,7 @@ h2
     color: white;
     margin: 0;
     left: 5px;
-    font-size: 25px;
+    font-size: 1.5vw;
     z-index: -9;
 }
 
