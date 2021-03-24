@@ -6,6 +6,7 @@ html
     scroll-behavior: smooth;
     overflow-y: hidden;
     overflow-x: hidden;
+    min-height: -webkit-fill-available;
 }
 
 body
@@ -13,6 +14,8 @@ body
     position: relative;
     background-color: black;
     cursor: grab;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 .page
@@ -91,39 +94,7 @@ li:hover
     font-size: 36px;
 }
 
-img.perfil
-{
-    height: 100vh;
-    position: absolute;
-    margin: auto;
-    left: 30px; right: -30px;
-    top: 0vh; 
-    object-fit: scale-down;
-    z-index: -10;
-}
 
-
-h1
-{
-    position: relative;
-    text-align: center;
-    color: purple;
-    margin: 0;
-    left: 5px;
-    font-size: 4vw;
-    z-index: -9;
-}
-
-h2
-{
-    position: relative;
-    text-align: center;
-    color: white;
-    margin: 0;
-    left: 5px;
-    font-size: 1.5vw;
-    z-index: -9;
-}
 
 h3
 {
@@ -309,8 +280,82 @@ img.certificate2
 }
 
 
+@media( min-width:600px ) 
+{
+    h1
+    {
+        position: relative;
+        text-align: center;
+        color: purple;
+        margin: 0;
+        left: 5px;
+        font-size: 4vw;
+        z-index: -9;
+    }
+    
+    h2
+    {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin: 0;
+        left: 5px;
+        font-size: 1.5vw;
+        z-index: -9;
+    }
+
+    img.perfil
+{
+    height: 100vh;
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    top: 0vh; 
+    object-fit: scale-down;
+    z-index: -10;
+}
+}
+
+
 @media( max-width:600px )
 {
+
+
+
+    h1
+    {
+        position: relative;
+        text-align: center;
+        color: purple;
+        margin: 0;
+        left: 5px;
+        font-size: 8vw;
+        z-index: -9;
+    }
+    
+    h2
+    {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin: 0;
+        left: 5px;
+        font-size: 3.5vw;
+        z-index: -9;
+    }
+
+
+img.perfil
+{
+    height: 100vh;
+    position: absolute;
+    margin: auto;
+    left: 10vw; right: -10vw;
+    top: 0vh; 
+    object-fit: scale-down;
+    z-index: -10;
+}
+
 
 img.certificate1
 {
