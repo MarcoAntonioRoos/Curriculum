@@ -16,6 +16,7 @@ body
     cursor: grab;
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    overflow-x : hidden;
 }
 
 #screenheight
